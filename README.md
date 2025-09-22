@@ -27,9 +27,11 @@ git add .git commit -m "Initial commit with Dockerfile"
 
 
 4. Create a GitHub repository and connect your local repo
-git remote add origin https://github.com/your-username/nodejs-demo-app.gitgit branch -M maingit push -u origin main
+git remote add origin https://github.com/ShaikAbbas2092/nodejs-demo-app.git
+git branch -M main
+git push -u origin main
 
-5. Set up GitHub Secrets for DockerHub credentials
+6. Set up GitHub Secrets for DockerHub credentials
 In GitHub repo, go to:
 Settings → Secrets and variables → Actions → New repository secret
 Add:
@@ -37,7 +39,7 @@ DOCKER_USERNAME — abbastaher.
 DOCKERHUB_TOKEN — ************.
 
 
-6. Add the GitHub Actions workflow file .github/workflows/main.yml
+7. Add the GitHub Actions workflow file .github/workflows/main.yml
 
 name: CI/CD Pipeline
 on:
